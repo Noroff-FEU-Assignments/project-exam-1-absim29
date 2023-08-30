@@ -1,0 +1,27 @@
+
+/* @import url(https://db.onlinewebfonts.com/c/1fed4454352f201d52b65ca5480afb2d?family=Playlist-Script); */
+
+/* @font-face {
+    font-family: "Playlist-Script";
+    src: url("https://db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.eot");
+    src: url("https://db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.svg#Playlist-Script")format("svg");
+} */
+
+:root {
+    --nude: #efe6de;
+    --light-orange: #edd1a9;
+    --burgundy: #c1565f;
+    --dusty-rose: #cc9b87;
+    --brown: #695652;
+    --h-font: "Playlist-Script", Montserrat, sans-serif;
+}
+
+h1 {
+    font-family: var(--h-font);
+}
+  
+
