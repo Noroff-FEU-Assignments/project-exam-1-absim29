@@ -31,6 +31,7 @@
 /** Body **/
 body {
     display: grid;
+    justify-content: center;
 }
 
 /** Header **/
@@ -118,4 +119,49 @@ footer {
     font-size: 20px;
     font-weight: 100;
     padding: 10px;
+    margin-top: 20px;
+}
+
+
+/** Carousel **/
+.carousel {
+    border: 1px solid red;
+    position: relative;
+    width: 100vw;
+}
+.carousel .post-wrapper {
+    width: 90%;
+    height: 470px;
+    margin: 0px auto;
+    border: 1px dashed red;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.carousel .post-wrapper .post {
+    width: 300px;
+    height: 450px;
+    margin: 0px 10px;
+    display: inline-block;
+    background: pink;
+    border-radius: 5px;
+    box-shadow: 1rem 1rem 1rem -1rem var(--brown);
+    width: calc(100%/3);
+}
+.carousel h2 {
+    text-align: center;
+    margin: 30px auto;
+}
+.carousel .next {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    font-size: 2em;
+    cursor: pointer;
+}
+.carousel .prev {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    font-size: 2em;
+    cursor: pointer;
 }
