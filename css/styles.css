@@ -12,11 +12,12 @@
 } */
 
 :root {
-    --nude: #efe6de;
-    --light-orange: #edd1a9;
-    --burgundy: #c1565f;
-    --dusty-rose: #cc9b87;
-    --brown: #695652;
+    --nude: rgb(240,234,226);
+    --light-orange: #E9D2AB;
+    --burgundy: #7E444D;
+    --dusty-rose: #D29893;
+    --red: #C35B5D;
+    --brown: #9F8F84;
     --black: #000;
     --h-font: "Playlist-Script", Montserrat, sans-serif;
     --font: Montserrat, sans-serif;
@@ -31,7 +32,7 @@
 /** Body **/
 body {
     display: grid;
-    justify-content: center;
+    background-color: var(--nude);
 }
 
 /** Header **/
@@ -109,7 +110,7 @@ h2,p {
 
 /** Footer **/
 footer {
-    background: var(--burgundy);
+    background: var(--dusty-rose);
     max-height: 60px;
     width: auto;
     margin: 0px;
