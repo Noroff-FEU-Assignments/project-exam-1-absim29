@@ -12,7 +12,7 @@ async function renderList() {
                         <img src="${post._embedded["wp:featuredmedia"][0].source_url}" alt="Image of dessert" id="postimg">
                         <div id="post-text">
                             <h2>${post.title.rendered}</h2>
-                            <p>Here is an introduction text to the blog post</p>
+                            <p>${post.excerpt.rendered}</p>
                         </div>
                     </div>
                 </a>`;
