@@ -25,7 +25,7 @@ async function createHtml() {
     const post = await getPost();
     const singlePost = document.querySelector(".single-wrapper");
   
-    document.title = post.title.rendered;
+    document.title = "Sweet Treats | " + post.title.rendered;
 
     console.log(post);
         singlePost.innerHTML = '';
