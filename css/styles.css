@@ -37,7 +37,7 @@ nav ul {
     position: fixed;
     width: 100vw;
     height: 50px;
-
+    z-index: 1;
 }
 
 nav ul li {
@@ -273,6 +273,10 @@ footer {
     border-radius: 20px;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
+}
+#singleimg:hover {
+    opacity: 0.8;
 }
 #singletext {
     max-width: 800px;
@@ -287,6 +291,48 @@ footer {
     line-height: 20px;
     margin-block: 10px;
     font-size: 16px;
+}
+
+
+/** Modal **/
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.7); 
+}
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 800px;
+}
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+    height: 150px;
+    font-size: 25px;
+}
+.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+  
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
 }
 
 
@@ -311,17 +357,20 @@ form h1 {
     font-weight: 800;
     margin-bottom: 20px;
 }
-form input, form textarea {
-    border: 0;
+.input-control input {
+    border: 2px solid #f5f5f5;
     margin: 10px 0;
     padding: 20px;
     outline: none;
     background: #f5f5f5;
     font-size: 16px;
 }
+#message {
+    padding-bottom: 100px;
+}
 form button {
     padding: 15px;
-    background: var(--burgundy);
+    background: var(--dusty-rose);
     color: #fff;
     font-size: 18px;
     border: 0;
@@ -332,11 +381,29 @@ form button {
     border-radius: 30px;
 }
 form button:hover {
-    background: var(--red);
+    background: var(--light-orange);
 }
 form button:active {
     background: var(--dusty-rose);
 }
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+.input-control input:focus {
+    outline: 0;
+}
+.input-control.success input {
+    border-color: rgb(84, 192, 139);
+}
+.input-control.error input {
+    border-color: var(--red);
+    border-radius: 5px;
+}
+.input-control .error {
+    color: var(--red);
+}
+
 
 /** Loader **/
 .loader {

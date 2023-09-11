@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://db.onlinewebfonts.com/c/1fed4454352f201d52b65ca5480afb2d?family=Playlist-Script" rel="stylesheet">
     <script src="https://kit.fontawesome.com/40355c2075.js" crossorigin="anonymous"></script>
+    <script type="module" src="./javascript/form.js" defer></script>
 </head>
 <body>
     <header>
@@ -33,12 +34,28 @@
     </header>
     <main>
         <div class="form-container">
-            <form>
+            <form id="form">
                 <h1>Get in touch</h1>
-                <input type="text" id="name" placeholder="Name" required>
-                <input type="email" id="email" placeholder="Email" required>
-                <input type="text" id="subject" placeholder="Subject" required>
-                <textarea id="message" rows="4" placeholder="Message" required></textarea>
+                <div class="input-control">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Please enter your name">
+                    <span class="error" aria-live="polite"></span>
+                </div>
+                <div class="input-control">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="Please enter your email">
+                    <span class="error" aria-live="polite"></span>
+                </div>
+                <div class="input-control">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" placeholder="Subject">
+                    <span class="error" aria-live="polite"></span>
+                </div>
+                <div class="input-control">
+                    <label for="message">Message</label>
+                    <input type="text" id="message" placeholder="Write your message here">
+                    <span class="error" aria-live="polite"></span>
+                </div>
                 <button type="submit">Send</button>
             </form>
         </div>
