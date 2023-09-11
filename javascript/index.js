@@ -1,10 +1,9 @@
 const allPosts = 'https://cors.noroff.dev/www.sweet-treats.no/wp-json/wp/v2/posts';
-const apiMedia = 'https://cors.noroff.dev/www.sweet-treats.no/wp-json/wp/v2/media';
-// const singlePost = 'https://cors.noroff.dev/www.sweet-treats.no/wp-json/wp/v2/posts/${id}?_embed';
+
 
 export async function getPosts() {
     try {
-        const response = await fetch(allPosts + "?_embed&?per_page=13");
+        const response = await fetch(allPosts + "?per_page=13&_embed");
         const blogposts = await response.json();
         return blogposts;
     }
@@ -24,8 +23,10 @@ async function renderPostsList() {
         posts.forEach(post => {
             postsList.innerHTML += 
                 `<div class="post">
-                    <img src="${post._embedded["wp:featuredmedia"][0].source_url}" alt="Image of dessert" id="carousel-image">
-                    <h2>${post.title.rendered}</h2>
+                    <a href="../singlepost.html?id=${post.id}">
+                        <img src="${post._embedded["wp:featuredmedia"][0].source_url}" alt="Image of dessert" id="carousel-image">
+                        <h2>${post.title.rendered}</h2>
+                    </a>
                 </div>`;
 
         });

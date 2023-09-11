@@ -32,7 +32,7 @@ async function createHtml() {
         singlePost.innerHTML +=
             `<h1>${post.title.rendered}</h1>
             <img src="${post._embedded["wp:featuredmedia"][0].source_url}" alt="Image of dessert" id="singleimg">
-            <p id="singletext">${post.content.rendered}</p>`;
+            <div id="singletext">${post.content.rendered}</div>`;
 
 }
 createHtml();
