@@ -36,6 +36,20 @@ renderPostsList();
 
 
 
-    
+const carouselContainer = document.querySelectorAll('.carousel-wrapper');
+const nextButton = document.querySelectorAll('.next');   
+const prevButton = document.querySelectorAll('.prev');
+
+carouselContainer.forEach((item, i) => {
+    let containerDimensions = item.getBoundingClientRect();
+    let containerWidth = containerDimensions.width;
+
+    nextButton[i].addEventListener('click', () => {
+        item.scrollLeft += containerWidth;
+    })
+    prevButton[i].addEventListener('click', () => {
+        item.scrollLeft -= containerWidth;
+    })
+});
     
 

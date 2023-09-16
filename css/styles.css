@@ -17,15 +17,18 @@
     box-sizing: border-box;
 }
 
+
 /** Body **/
 body {
     display: grid;
     background-color: var(--nude);
 }
 
+
 /** Header **/
 nav {
     display: grid;
+    max-height: 370px;
 }
 
 nav ul { 
@@ -103,6 +106,7 @@ label #cancel {
     width: 27%;
     object-fit: cover;
     cursor: pointer;
+    margin-top: -10px;
 }
 
 
@@ -144,16 +148,24 @@ footer {
     position: relative;
     width: 100vw;
 }
-.carousel .carousel-wrapper {
-    width: 90%;
+
+.carousel-wrapper {
+    width: 85%;
     height: 330px;
     margin: 0px auto;
     white-space: nowrap;
-    overflow: scroll;
+    overflow: hidden;
     display: flex;
     align-items: center;
+    overflow-x: auto;
+    scroll-behavior: smooth;
 }
-.carousel .carousel-wrapper .post {
+
+.post:hover {
+    opacity: 0.8;
+}
+
+.carousel-wrapper .post {
     width: 300px;
     height: 300px;
     margin: 0px 10px;
@@ -162,28 +174,34 @@ footer {
     box-shadow: 1rem 1rem 1rem -1rem var(--brown);
     border-radius: 60px 0px 60px 0px;
 }
+
 .carousel h2 {
     text-align: center;
     margin: 30px auto;
+    font-size: 22px;
 }
+
 .carousel a {
     text-decoration: none;
     color: var(--black);
 }
+
 .carousel .next {
     position: absolute;
-    top: 50%;
-    right: 30px;
+    top: 45%;
+    right: 70px;
     font-size: 2em;
     cursor: pointer;
 }
+
 .carousel .prev {
     position: absolute;
-    top: 50%;
-    left: 30px;
+    top: 45%;
+    left: 70px;
     font-size: 2em;
     cursor: pointer;
 }
+
 #carousel-image {
     width: 300px;
     height: 200px;
@@ -198,6 +216,7 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     gap: 50px;
+    margin-bottom: 100px;
 }
 
 #aboutimg {
@@ -234,13 +253,24 @@ footer {
     gap: 15px;
     background-color: var(--light-orange);
     border-radius: 0px 60px 0px 60px;
+    box-shadow: 1rem 1rem 1rem -1rem var(--brown);
+    max-width: 1000px;
+    transition: .3s;
 }
+
+.post-wrapper:hover>#postimg,
+.post-wrapper:hover {
+    border-radius: 60px 0px 60px 0px;
+}
+
 #postimg {
-    max-height: 300px;
-    width: 400px;
+    max-height: 250px;
+    width: 500px;
     object-fit: cover;
     border-radius: 0px 60px 0px 60px;
+    transition: .3s;
 }
+
 #post-text {
     width: 800px;
     display: flex;
@@ -249,14 +279,21 @@ footer {
     align-items: center;
     margin: 0px 20px 0px 10px;
 }
+
 #post-text h2 {
     font-size: 25px;
     margin-bottom: 30px;
 }
+
 .posts a {
     text-decoration: none;
     color: var(--black);
 }
+
+#load-more {
+    display: block;
+}
+
 
 /** Single post page **/
 .single-wrapper {
@@ -274,6 +311,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
+    box-shadow: 1rem 1rem 1rem -1rem var(--brown);
 }
 #singleimg:hover {
     opacity: 0.8;
@@ -351,6 +389,7 @@ form {
     width: 90%;
     max-width: 600px;
     border-radius: 10px;
+    box-shadow: 1rem 1rem 1rem -1rem var(--brown);
 }
 form h1 {
     color: var(--dark-grey);
@@ -368,7 +407,7 @@ form h1 {
 #message {
     padding-bottom: 100px;
 }
-form button {
+form button, #load-more {
     padding: 15px;
     background: var(--dusty-rose);
     color: #fff;
@@ -380,10 +419,12 @@ form button {
     margin: 20px auto 0;
     border-radius: 30px;
 }
-form button:hover {
+form button:hover,
+#load-more:hover {
     background: var(--light-orange);
 }
-form button:active {
+form button:active,
+#load-more:active {
     background: var(--dusty-rose);
 }
 .input-control {
@@ -413,6 +454,8 @@ form button:active {
     width: 120px;
     height: 120px;
     animation: spin 2s linear infinite;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @keyframes spin {
