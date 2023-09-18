@@ -431,18 +431,10 @@ form button:active,
     display: flex;
     flex-direction: column;
 }
-.input-control input:focus {
-    outline: 0;
-}
-.input-control.success input {
-    border-color: rgb(84, 192, 139);
-}
-.input-control.error input {
-    border-color: var(--red);
-    border-radius: 5px;
-}
-.input-control .error {
+.input-control span,
+#submit-error {
     color: var(--red);
+    margin: auto;
 }
 
 

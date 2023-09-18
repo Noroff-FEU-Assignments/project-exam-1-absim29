@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://db.onlinewebfonts.com/c/1fed4454352f201d52b65ca5480afb2d?family=Playlist-Script" rel="stylesheet">
     <script src="https://kit.fontawesome.com/40355c2075.js" crossorigin="anonymous"></script>
-    <script type="module" src="./javascript/form.js" defer></script>
 </head>
 <body>
     <header>
@@ -38,28 +37,30 @@
                 <h1>Get in touch</h1>
                 <div class="input-control">
                     <label for="name">Name</label>
-                    <input type="text" id="name" placeholder="Please enter your name">
-                    <span class="error" aria-live="polite"></span>
+                    <input type="text" id="name" placeholder="Please enter your name" onkeyup="validateName()">
+                    <span id="name-error"></span>
                 </div>
                 <div class="input-control">
                     <label for="email">Email</label>
-                    <input type="text" id="email" placeholder="Please enter your email">
-                    <span class="error" aria-live="polite"></span>
+                    <input type="text" id="email" placeholder="Please enter your email" onkeyup="validateEmail()">
+                    <span id="email-error"></span>
                 </div>
                 <div class="input-control">
                     <label for="subject">Subject</label>
-                    <input type="text" id="subject" placeholder="Subject">
-                    <span class="error" aria-live="polite"></span>
+                    <input type="text" id="subject" placeholder="Subject" onkeyup="validateSubject()">
+                    <span id="subject-error"></span>
                 </div>
                 <div class="input-control">
                     <label for="message">Message</label>
-                    <input type="text" id="message" placeholder="Write your message here">
-                    <span class="error" aria-live="polite"></span>
+                    <input type="text" id="message" placeholder="Write your message here" onkeyup="validateMessage()">
+                    <span id="message-error"></span>
                 </div>
-                <button type="submit">Send</button>
+                <button type="submit" onclick="return validateForm()">Send</button>
+                <span id="submit-error"></span>
             </form>
         </div>
     </main>
     <footer>Copyright &copy; 2023 Sweet Treats</footer>
+    <script src="./javascript/contact.js"></script>
 </body>
 </html>

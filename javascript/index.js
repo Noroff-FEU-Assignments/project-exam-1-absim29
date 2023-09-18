@@ -3,7 +3,7 @@ const allPosts = 'https://cors.noroff.dev/www.sweet-treats.no/wp-json/wp/v2/post
 
 export async function getPosts() {
     try {
-        const response = await fetch(allPosts + "?per_page=13&_embed");
+        const response = await fetch(allPosts + "?per_page=16&_embed");
         const blogposts = await response.json();
         return blogposts;
     }
