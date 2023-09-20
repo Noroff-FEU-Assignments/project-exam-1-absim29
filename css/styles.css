@@ -1,5 +1,5 @@
 :root {
-    --nude: rgb(240,234,226);
+    --nude: rgb(240, 234, 226);
     --light-orange: #E9D2AB;
     --burgundy: #7E444D;
     --dusty-rose: #D29893;
@@ -31,7 +31,7 @@ nav {
     max-height: 370px;
 }
 
-nav ul { 
+nav ul {
     float: left;
     display: block;
     margin-block-start: auto;
@@ -119,13 +119,14 @@ h1 {
     font-weight: 300;
 }
 
-h2,p {
+h2,
+p {
     font-family: var(--font);
     font-size: 18px;
     letter-spacing: 1px;
     font-weight: 300;
 }
-  
+
 
 /** Footer **/
 footer {
@@ -303,6 +304,7 @@ footer {
     align-items: center;
     gap: 20px;
 }
+
 #singleimg {
     width: 660px;
     max-height: 400px;
@@ -313,19 +315,24 @@ footer {
     cursor: pointer;
     box-shadow: 1rem 1rem 1rem -1rem var(--brown);
 }
+
 #singleimg:hover {
     opacity: 0.8;
 }
+
 #singletext {
     max-width: 800px;
 }
+
 #singletext p {
     line-height: 20px;
     margin-block: 20px;
     font-size: 20px;
     font-style: italic;
 }
-#singletext ul, #singletext ol {
+
+#singletext ul,
+#singletext ol {
     line-height: 20px;
     margin-block: 10px;
     font-size: 16px;
@@ -334,23 +341,25 @@ footer {
 
 /** Modal **/
 .modal {
-    display: none; 
-    position: fixed; 
-    z-index: 1; 
-    padding-top: 100px; 
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
     left: 0;
     top: 0;
-    width: 100%; 
+    width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0,0,0,0.8); 
+    background-color: rgba(0, 0, 0, 0.8);
 }
+
 .modal-content {
     margin: auto;
     display: block;
     width: 80%;
     max-width: 800px;
 }
+
 #caption {
     margin: auto;
     display: block;
@@ -362,14 +371,21 @@ footer {
     height: 150px;
     font-size: 25px;
 }
-.modal-content, #caption {
+
+.modal-content,
+#caption {
     animation-name: zoom;
     animation-duration: 0.6s;
 }
-  
+
 @keyframes zoom {
-    from {transform:scale(0)}
-    to {transform:scale(1)}
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
 }
 
 
@@ -380,6 +396,7 @@ footer {
     align-items: center;
     justify-content: center;
 }
+
 form {
     background: #fff;
     display: flex;
@@ -390,11 +407,13 @@ form {
     border-radius: 10px;
     box-shadow: 1rem 1rem 1rem -1rem var(--brown);
 }
+
 form h1 {
     color: var(--dark-grey);
     font-weight: 800;
     margin-bottom: 20px;
 }
+
 .input-control input {
     border: 2px solid #f5f5f5;
     margin: 10px 0;
@@ -403,10 +422,13 @@ form h1 {
     background: #f5f5f5;
     font-size: 16px;
 }
+
 #message {
     padding-bottom: 100px;
 }
-form button, #load-more {
+
+form button,
+#load-more {
     padding: 15px;
     background: var(--dusty-rose);
     color: #fff;
@@ -418,18 +440,22 @@ form button, #load-more {
     margin: 20px auto 0;
     border-radius: 30px;
 }
+
 form button:hover,
 #load-more:hover {
     background: var(--light-orange);
 }
+
 form button:active,
 #load-more:active {
     background: var(--dusty-rose);
 }
+
 .input-control {
     display: flex;
     flex-direction: column;
 }
+
 .input-control span,
 #submit-error {
     color: var(--red);
@@ -450,6 +476,11 @@ form button:active,
 }
 
 @keyframes spin {
-    0% {transform: rotate(0deg);}
-    100% {transform: rotate(360deg);}
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }

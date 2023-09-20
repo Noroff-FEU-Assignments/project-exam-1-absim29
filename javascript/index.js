@@ -5,25 +5,25 @@ async function renderPostsList() {
     const posts = await getPosts();
     const postsList = document.querySelector(".carousel-wrapper");
 
-        postsList.innerHTML = '';
-        posts.forEach(post => {
-            postsList.innerHTML += 
-                `<div class="post">
+    postsList.innerHTML = '';
+    posts.forEach(post => {
+        postsList.innerHTML +=
+            `<div class="post">
                     <a href="../singlepost.html?id=${post.id}">
                         <img src="${post._embedded["wp:featuredmedia"][0].source_url}" alt="Image of dessert" id="carousel-image">
                         <h2>${post.title.rendered}</h2>
                     </a>
                 </div>`;
 
-        });
-            
-    }
+    });
+
+}
 renderPostsList();
 
 
 
 const carouselContainer = document.querySelectorAll('.carousel-wrapper');
-const nextButton = document.querySelectorAll('.next');   
+const nextButton = document.querySelectorAll('.next');
 const prevButton = document.querySelectorAll('.prev');
 
 carouselContainer.forEach((item, i) => {
@@ -37,5 +37,5 @@ carouselContainer.forEach((item, i) => {
         item.scrollLeft -= containerWidth;
     })
 });
-    
+
 

@@ -24,7 +24,7 @@ function validateEmail() {
         emailError.innerHTML = 'Email is required';
         return false;
     }
-    if (!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)){
+    if (!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
         emailError.innerHTML = 'Email is invalid';
         return false;
     }
@@ -50,8 +50,8 @@ function validateMessage() {
     var message = document.getElementById('message').value.trim();
     var required = 26;
     var left = required - message.length;
-    
-    if (left > 0){
+
+    if (left > 0) {
         messageError.innerHTML = left + ' more characters required';
         return false;
     }
@@ -61,9 +61,9 @@ function validateMessage() {
 }
 
 function validateForm() {
-    if (!validateName() || !validateEmail() || !validateSubject() || !validateMessage()){
+    if (!validateName() || !validateEmail() || !validateSubject() || !validateMessage()) {
         submitError.style.display = 'block';
-        submitError.innerHTML = 'Error! Please check fields above';
+        submitError.innerHTML = 'Error! Please check the fields above';
         setTimeout(() => {
             submitError.style.display = 'none';
         }, 3000);

@@ -7,8 +7,8 @@ export async function getPosts() {
         const blogposts = await response.json();
         return blogposts;
     }
-    catch(error) {
-        console.error({error:'An error has occured in the fetch api'})
+    catch (error) {
+        console.error({ error: 'An error has occured in the fetch api' })
     }
 }
 getPosts();
