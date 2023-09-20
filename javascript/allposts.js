@@ -1,4 +1,4 @@
-import { getPosts } from "./index.js";
+import { getPosts } from "./const.js";
 
 
 async function renderList() {
@@ -42,9 +42,8 @@ async function renderList() {
                             </div>
                         </div>
                     </a>`;
-            // listAll.append();
-
         }
+        
         if(totalCount){
             loadMoreButton.style.display = "none";
         }

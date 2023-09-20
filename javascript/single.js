@@ -1,12 +1,12 @@
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
-console.log(id)
+
 const singlePost = 'https://cors.noroff.dev/www.sweet-treats.no/wp-json/wp/v2/posts/' + id + '?_embed';
 
 
 
-export async function getPost() {
+export async function getSinglePost() {
     try {
         const answer = await fetch(singlePost);
         const result = await answer.json();
@@ -17,17 +17,16 @@ export async function getPost() {
     }
 
 }
-getPost();
+getSinglePost();
 
 
 
 async function createHtml() {
-    const post = await getPost();
+    const post = await getSinglePost();
     const singlePost = document.querySelector(".single-wrapper");
   
     document.title = "Sweet Treats | " + post.title.rendered;
 
-    console.log(post);
         singlePost.innerHTML = '';
         singlePost.innerHTML +=
             `<h1>${post.title.rendered}</h1>
