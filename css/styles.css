@@ -91,12 +91,13 @@ label #cancel {
     float: right;
 }
 
-.socialmedia a:hover {
+.socialmedia a:hover,
+.socialmedia a:active {
     background-color: var(--dusty-rose);
 }
 
-.socialmedia a:active {
-    background-color: var(--dusty-rose);
+.socialmedia i {
+    font-size: 35px;
 }
 
 .logo {
