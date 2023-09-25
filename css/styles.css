@@ -112,6 +112,7 @@ label #cancel {
     object-fit: cover;
     cursor: pointer;
     margin-top: -10px;
+    z-index: -1;
 }
 
 
