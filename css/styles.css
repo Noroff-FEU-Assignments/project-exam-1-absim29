@@ -73,6 +73,10 @@ nav ul li a:active {
     text-decoration: underline var(--burgundy);
 }
 
+.hide {
+    display: none;
+}
+
 label #btn,
 label #cancel {
     color: var(--burgundy);
