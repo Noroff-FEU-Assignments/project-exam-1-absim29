@@ -339,20 +339,20 @@ footer {
 
 #singletext {
     max-width: 800px;
+    background: radial-gradient(var(--light-orange), var(--nude));
+    /* background-color: white; */
+    padding: 0px 20px 0px 30px;
 }
 
 #singletext p {
-    line-height: 20px;
     margin-block: 20px;
     font-size: 20px;
-    font-style: italic;
 }
 
 #singletext ul,
 #singletext ol {
-    line-height: 20px;
     margin-block: 10px;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 
