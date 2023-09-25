@@ -446,7 +446,7 @@ form h1 {
 form button,
 #load-more {
     padding: 15px;
-    background: var(--dusty-rose);
+    background: var(--burgundy);
     color: #fff;
     font-size: 18px;
     border: 0;
@@ -459,12 +459,12 @@ form button,
 
 form button:hover,
 #load-more:hover {
-    background: var(--light-orange);
+    background: var(--dusty-rose);
 }
 
 form button:active,
 #load-more:active {
-    background: var(--dusty-rose);
+    background: var(--light-orange);
 }
 
 .input-control {
