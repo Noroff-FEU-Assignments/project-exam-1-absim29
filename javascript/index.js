@@ -32,16 +32,13 @@ carouselContainer.forEach((item, i) => {
 
     nextButton[i].addEventListener('click', () => {
         item.scrollLeft += containerWidth;
-        containerWidth.scrollIntoView({
-            behavior: 'smooth'
-        });
     })
     prevButton[i].addEventListener('click', () => {
         item.scrollLeft -= containerWidth;
-        containerWidth.scrollIntoView({
-            behavior: 'smooth'
-        });
     })
+    containerWidth.scrollIntoView({
+        behavior: 'smooth'
+    });
 });
 
 
