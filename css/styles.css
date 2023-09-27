@@ -26,6 +26,10 @@ body {
     min-height: 100vh
 }
 
+main {
+    z-index: 1;
+}
+
 
 /** Header **/
 nav {
