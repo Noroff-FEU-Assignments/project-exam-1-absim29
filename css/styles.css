@@ -179,8 +179,7 @@ footer {
     align-items: center;
     overflow-x: auto;
     scroll-behavior: smooth;
-    transition: all 2s;
-    transition-timing-function: ease-in-out;
+    transition: 5s ease-in-out;
 }
 
 .post:hover {
@@ -195,7 +194,6 @@ footer {
     background: var(--light-orange);
     box-shadow: 1rem 1rem 1rem -1rem var(--brown);
     border-radius: 60px 0px 60px 0px;
-    transition: all 2s;
 }
 
 .carousel h2 {
@@ -223,6 +221,11 @@ footer {
     left: 70px;
     font-size: 2em;
     cursor: pointer;
+}
+
+.prev:active,
+.next:active {
+    transition: 5s ease-in-out;
 }
 
 #carousel-image {
