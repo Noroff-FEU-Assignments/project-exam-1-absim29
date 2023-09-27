@@ -42,7 +42,7 @@ nav ul {
     position: fixed;
     width: 100vw;
     height: 50px;
-    z-index: 1;
+    z-index: 2;
 }
 
 nav ul li {
@@ -112,7 +112,6 @@ label #cancel {
     object-fit: cover;
     cursor: pointer;
     margin-top: -10px;
-    z-index: -1;
 }
 
 
@@ -423,6 +422,7 @@ form {
     max-width: 600px;
     border-radius: 10px;
     box-shadow: 1rem 1rem 1rem -1rem var(--brown);
+    z-index: 1;
 }
 
 form h1 {
