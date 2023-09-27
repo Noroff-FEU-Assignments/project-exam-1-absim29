@@ -179,7 +179,7 @@ footer {
     align-items: center;
     overflow-x: auto;
     scroll-behavior: smooth;
-    transition-duration: 3s;
+    transition: all 2s;
     transition-timing-function: ease-in-out;
 }
 
@@ -195,6 +195,7 @@ footer {
     background: var(--light-orange);
     box-shadow: 1rem 1rem 1rem -1rem var(--brown);
     border-radius: 60px 0px 60px 0px;
+    transition: all 2s;
 }
 
 .carousel h2 {
