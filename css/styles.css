@@ -223,11 +223,6 @@ footer {
     cursor: pointer;
 }
 
-.prev:active,
-.next:active {
-    transition: 5s ease-in-out;
-}
-
 #carousel-image {
     width: 300px;
     height: 200px;
