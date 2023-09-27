@@ -74,7 +74,8 @@ nav ul li a:active {
 }
 
 .currentpage {
-    text-decoration: underline var(--burgundy);
+    text-decoration: underline;
+    text-decoration-color: var(--burgundy);
 }
 
 .hide {
