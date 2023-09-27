@@ -207,12 +207,13 @@
 
     label #btn {
         display: block;
-        z-index: 1;
-        position: relative;
+        position: fixed;
+        right: 0;
         padding: 30px 10px 15px 30px;
         background-color: var(--dusty-rose);
         border-radius: 0 0 0 100%;
         margin-right: 0px;
+        z-index: 2;
     }
 
     nav ul {
@@ -222,7 +223,6 @@
         background: var(--dusty-rose);
         text-align: center;
         transition: all .5s;
-        z-index: 1;
         right: -120%;
         display: flex;
         flex-direction: column;
@@ -251,11 +251,12 @@
 
     #check:checked~label #cancel {
         display: block;
-        z-index: 1;
-        position: relative;
+        position: fixed;
+        right: 0;
         padding: 30px 10px 15px 30px;
         margin-right: 0px;
         font-size: 40px;
+        z-index: 2;
     }
 
     nav ul .socialmedia {
