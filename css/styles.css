@@ -179,7 +179,6 @@ footer {
     align-items: center;
     overflow-x: auto;
     scroll-behavior: smooth;
-    transition: 5s ease-in-out;
 }
 
 .post:hover {
