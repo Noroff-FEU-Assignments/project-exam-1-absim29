@@ -32,7 +32,7 @@ async function createHtml() {
         `<h1>${post.title.rendered}</h1>
             <img src="${post._embedded["wp:featuredmedia"][0].source_url}" alt="${post.title.rendered}" id="singleimg">
             <div id="myModal" class="modal">
-                <img class="modal-content" id="img">
+                <img class="modal-content" id="img" alt="${post.title.rendered}>
                 <div id="caption"></div>
             </div>
             <div id="singletext">${post.content.rendered}</div>`;
