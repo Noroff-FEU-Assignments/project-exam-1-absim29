@@ -69,5 +69,8 @@ function validateForm() {
         }, 3000);
         return false;
     }
+    else {
+        window.alert("Success!");
+    }
 
 }
