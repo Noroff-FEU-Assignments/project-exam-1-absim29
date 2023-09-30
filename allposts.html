@@ -67,7 +67,19 @@
     </header>
     <main>
       <h1>Blog Posts</h1>
-      <section class="posts">
+      <section class="search-bar">
+        <form>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            name=""
+            id="search-item"
+            placeholder="Search Blogs"
+            onkeyup="search()"
+          />
+        </form>
+      </section>
+      <section class="posts" id="posts">
         <div class="loader"></div>
         <!-- <a href="singlepost.html"><div class="post-wrapper">
                 <img src="images/birthday-cake.jpg" alt="Image of dessert" id="postimg">
@@ -102,5 +114,6 @@
       </div>
       Copyright &copy; 2023 Sweet Treats
     </footer>
+    <script src="./javascript/search.js"></script>
   </body>
 </html>

@@ -419,7 +419,7 @@ footer {
     justify-content: center;
 }
 
-form {
+.form-container form {
     background: #fff;
     display: flex;
     flex-direction: column;
@@ -431,7 +431,7 @@ form {
     z-index: 1;
 }
 
-form h1 {
+.form-container form h1 {
     color: var(--dark-grey);
     font-weight: 800;
     margin-bottom: 20px;
@@ -506,4 +506,34 @@ form button:active,
     100% {
         transform: rotate(360deg);
     }
+}
+
+/** Search bar **/
+.search-bar {
+    width: 200px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.search-bar form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+}
+
+.search-bar form input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+    padding: 2px 5px;
+}
+
+.search-bar form i {
+    padding-left: 10px;
 }

@@ -53,6 +53,3 @@ async function renderList() {
 
 }
 renderList();
-
-
-
