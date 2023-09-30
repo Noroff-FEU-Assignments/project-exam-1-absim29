@@ -12,7 +12,7 @@ async function renderList() {
     for (let i = 0; i < posts.length; i++) {
 
         listAll.innerHTML +=
-            `<a href="../singlepost.html?id=${posts[i].id}">
+            `<a href="../singlepost.html?id=${posts[i].id}" id="link">
                     <div class="post-wrapper">
                         <img src="${posts[i]._embedded["wp:featuredmedia"][0].source_url}" alt="Image of dessert" id="postimg">
                         <div id="post-text">
